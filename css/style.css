@@ -1,0 +1,138 @@
+.headercontainer{
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: 0 0;
+}
+
+.logomark{
+    font-family: times new roman,times,serif;
+    font-size: 28px;
+    text-align: left;
+    letter-spacing: 0.15em;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.tagline{
+    font-size: 13px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 4px;
+    font: normal normal normal 14px/1.4em 'times new roman',times,serif;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 14px 16px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li :hover{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: 100px 200px;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-items{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-items .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-items .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery-items .text{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.gallery-items:hover .text{
+    opacity: 1;
+}
+
+
+.image-text-container {
+    display: flexbox;
+    padding: 40px;
+    
+}
+
+.image-text-container .image img{
+    float: left;
+    width: 500px;
+    height: 50%;
+}
+
+.image-text-container p{
+    float: right;
+    display: block;
+    width: 500px;
+    height: 200px;
+    line-height: 1.5em;
+    ali
+}
+
+
+footer{
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding: 30px;
+    width: 100%;
+}
