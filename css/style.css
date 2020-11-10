@@ -101,7 +101,7 @@ li :hover {
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-
+/* 
 .gallery-items .text {
     opacity: 1;
     position: absolute;
@@ -112,7 +112,7 @@ li :hover {
     font-size: 15px;
     pointer-events: none;
     z-index: 4;
-}
+} */
 
 .gallery-items:hover .text {
     opacity: 1;
