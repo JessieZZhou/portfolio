@@ -1,4 +1,4 @@
-.headercontainer{
+.headercontainer {
     height: auto;
     width: 100%;
     position: relative;
@@ -10,8 +10,8 @@
     background: 0 0;
 }
 
-.logomark{
-    font-family: times new roman,times,serif;
+.logomark {
+    font-family: times new roman, times, serif;
     font-size: 28px;
     text-align: left;
     letter-spacing: 0.15em;
@@ -19,21 +19,21 @@
     margin-left: 10px;
 }
 
-.tagline{
+.tagline {
     font-size: 13px;
     text-align: left;
     margin-left: 10px;
     margin-top: 4px;
-    font: normal normal normal 14px/1.4em 'times new roman',times,serif;
+    font: normal normal normal 14px/1.4em 'times new roman', times, serif;
 }
 
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 14px 16px;
@@ -41,23 +41,39 @@ ul{
     background-color: #ffffff;
 }
 
-li{
+li {
     float: right;
 }
 
-li a{
+li a {
     color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li :hover{
+li :hover {
     background-color: #333333;
     color: #ffffff;
 }
 
-.container{
+
+.skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus {
+    top: 0px
+}
+
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: 100px 200px;
@@ -65,19 +81,19 @@ li :hover{
     margin-top: 20px;
 }
 
-.gallery-items{
+.gallery-items {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.gallery-items .image{
+.gallery-items .image {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.gallery-items .image img{
+.gallery-items .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -86,7 +102,7 @@ li :hover{
     transition: 0.5s ease-in-out;
 }
 
-.gallery-items .text{
+.gallery-items .text {
     opacity: 1;
     position: absolute;
     top: 50%;
@@ -98,7 +114,7 @@ li :hover{
     z-index: 4;
 }
 
-.gallery-items:hover .text{
+.gallery-items:hover .text {
     opacity: 1;
 }
 
@@ -106,16 +122,16 @@ li :hover{
 .image-text-container {
     display: flexbox;
     padding: 40px;
-    
+
 }
 
-.image-text-container .image img{
+.image-text-container .image img {
     float: left;
     width: 500px;
     height: 50%;
 }
 
-.image-text-container p{
+.image-text-container p {
     float: right;
     display: block;
     width: 500px;
@@ -124,8 +140,11 @@ li :hover{
     ali
 }
 
+.projectimage {
+    display: ;
+}
 
-footer{
+footer {
     border: none;
     background-color: black;
     color: white;
@@ -136,3 +155,22 @@ footer{
     padding: 30px;
     width: 100%;
 }
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+        /* Removes scroll animation */
+    }
+
+    .skip a {
+        -webkit-transition: none;
+        /* sets to default setting */
+        transition: none;
+        /* sets to default setting */
+    }
+
+    /*Turn off parallax*/
+    header {
+        background-attachment: initial;
+    }
