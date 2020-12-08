@@ -26,3 +26,8 @@
     margin-top: 4px;
     font: normal normal normal 14px/1.4em 'times new roman',times,serif;
 }
+
+.image{
+    max-width: 50%;
+    height: auto;
+}

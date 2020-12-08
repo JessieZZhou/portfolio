@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
         <div class="headercontainer">
             <div class="logomark">JESSIE ZHOU</div>
             <div class="tagline">UX DESIGNER</div>
             <nav>
                 <ul class="nav_links">
-                    <li class="nav_items"> <a href="contact.html"> Contact</a></li>
                     <li class="nav_items"> <a href="about.html"> About </a></li>
+                    <li class="nav_items"> <a href="contact.html"> Contact</a></li>
                     <li class="nav_items"> <a href="individualwork.html"> Work </a></li>
                     <li class="nav_items"> <a href="index.html"> Home</a></li>
             </nav>
@@ -26,34 +26,27 @@
     </header>
 
     <main class="contact" id="skip">
-        <h1>Contact</h1>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing el commodo ullamcorper. Duis pretium convallis odio
-                non varius. Nulla quis lorem metus. Fusce velit magna, ultricies quis elit sit amet, lacinia porttitor
-                magna. Nulla scelerisque, ex quis imperdiet finibus, elit massa dictum arcu, et fermentum orci felis in
-                ipsum. Suspendisse rutrum nec ipsum id feugiat. Nunc eu lacinia turpis.</p>
-        </div>
+        <h3>Contact Form</h3>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <div>
-            <p>
-                <label for="contact-author">Name*</label>
-                <input id="contact-author" type="text" name="contact-author" size="30" aria-required="true" required=""class="">
-            </p>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-            <p>
-                <label for="contact-email">Email*</label>
-                <input id="contact-email" type="email" name="contact-email" size="30" aria-required="true" required="">
-            </p>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">USA</option>
+                    <option value="canada">UK</option>
+                    <option value="usa">USA</option>
+                </select>
 
-            <p>
-                <label for="contact-message">Message</label>
-                <textarea id="contact-message" name="contact-message" cols="45" aria-required="true"></textarea>
-            </p>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-            <p>
-                <input id="contact-submit" type="submit" name="contact-submit" size="30" value="Send">
-            </p>
-
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </main>
 
